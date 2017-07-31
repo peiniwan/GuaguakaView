@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <coordemo.ly.com.myapplication.GuaGuaKa
+        android:layout_width="wrap_content"
+        android:id="@+id/gg"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="150dp" />
+
+
+    <FrameLayout
+        android:layout_width="350dp"
+        android:layout_centerInParent="true"
+        android:layout_height="150dp">
+
+        <include
+            layout="@layout/scratch_view_after"/>
+
+        <coordemo.ly.com.myapplication.GuaGuaKaView
+            android:layout_width="match_parent"
+            android:id="@+id/gg1"
+            android:layout_height="match_parent" />
+
+
+
+    </FrameLayout>
+
+    <coordemo.ly.com.myapplication.ScratchImageView
+        android:layout_centerInParent="true"
+        android:id="@+id/scratch_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:visibility="gone"
+        android:background="@android:color/white"/>
+
+</RelativeLayout>

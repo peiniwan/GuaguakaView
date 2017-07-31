@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:gravity="center_horizontal"
+    android:background="@drawable/award_2"
+    android:id="@+id/ll_llok"
+    android:padding="30dp"
+    android:layout_gravity="center_horizontal"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:text="3元还款劵"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:textColor="#ffffff"
+        android:layout_marginTop="5dp"
+        android:layout_height="wrap_content"
+        android:text="手气真好！快去为信用卡还款，使用红包立减3元"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:id="@+id/tv_look"
+        android:textColor="#ffffff"
+        android:text="立即查看"/>
+</LinearLayout>
