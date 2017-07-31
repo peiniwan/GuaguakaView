@@ -70,8 +70,6 @@ public class GuaGuaKaView extends View {
         mPath = new Path();
         setUpOutPaint();
         setUpBackPaint();
-
-
     }
 
 
@@ -93,7 +91,6 @@ public class GuaGuaKaView extends View {
             canvas.drawBitmap(mBitmap, 0, 0, null);
         } else {
             this.setVisibility(GONE);
-
         }
 
 
@@ -111,7 +108,7 @@ public class GuaGuaKaView extends View {
 
         mCanvas = new Canvas(mBitmap);
 
-        mMaskPaint.setColor(Color.parseColor("#00000000"));
+        mMaskPaint.setColor(Color.parseColor("#00000000"));//遮层透明
         mMaskPaint.setStyle(Style.FILL);
         mCanvas.drawRoundRect(new RectF(0, 0, measuredWidth, measuredHeight), 0, 0, mMaskPaint);
         mCanvas.drawBitmap(BitmapFactory.decodeResource(getResources(),
@@ -231,6 +228,11 @@ public class GuaGuaKaView extends View {
 
     };
 
+    /**
+     * 将布局转换成bitmap
+     * @param addViewContent
+     * @return
+     */
     private Bitmap getViewBitmap(View addViewContent) {
 
         addViewContent.setDrawingCacheEnabled(true);

@@ -24,17 +24,6 @@
             android:id="@+id/gg1"
             android:layout_height="match_parent" />
 
-
-
     </FrameLayout>
-
-    <coordemo.ly.com.myapplication.ScratchImageView
-        android:layout_centerInParent="true"
-        android:id="@+id/scratch_view"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="10dp"
-        android:visibility="gone"
-        android:background="@android:color/white"/>
 
 </RelativeLayout>

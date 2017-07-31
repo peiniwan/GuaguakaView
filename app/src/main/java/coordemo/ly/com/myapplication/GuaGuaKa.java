@@ -19,6 +19,10 @@ import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+
+/**
+ * 一开始将最下面写在自定义控件里了，扩展性不好
+ */
 public class GuaGuaKa extends View {
 
     /**
